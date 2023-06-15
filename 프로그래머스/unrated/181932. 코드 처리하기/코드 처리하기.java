@@ -7,11 +7,7 @@ class Solution {
         for(int i=0; i<code.length(); i++) {
             char code_chr = code.charAt(i);
             if(code_chr == '1') {
-                if(mode == 0) {
-                    mode = 1;
-                } else {
-                    mode = 0;
-                };
+                mode = 1-mode;
                 continue;
             }
             if(mode == 0) {
