@@ -1,7 +1,7 @@
 class Solution {
     public String solution(String code) {
         
-        StringBuffer sb = new StringBuffer(code);
+        StringBuffer answer = new StringBuffer();
         int mode = 0;
         
         for(int i=0; i<code.length(); i++) {
@@ -12,20 +12,15 @@ class Solution {
             }
             if(mode == 0) {
                 if(i == 0 || i%2 == 0) {
-                    sb.append(code_chr);
+                    answer.append(code_chr);
                 }
             } else {
                 if(i%2 != 0) {
-                    sb.append(code_chr);
+                    answer.append(code_chr);
                 }
             }
         }
         
-        if(sb.length() == code.length()) {
-            return "EMPTY";
-        }
-            
-        String answer = sb.substring(code.length());
-        return answer;
+        return answer.length() == 0 ? "EMPTY" : answer.toString();
     }
 }
