@@ -38,9 +38,6 @@ class Solution {
                         }
                     }
                     answer = (int)Math.pow((10*p+q), 2);
-                    System.out.println("p="+p);
-                    System.out.println("q="+q);
-                    System.out.println(map);
                 }
                 else {
                     for(Integer key : map.keySet()) {
@@ -53,9 +50,6 @@ class Solution {
                         }
                     }
                     answer = (p+q)*Math.abs(p-q);
-                    System.out.println("p="+p);
-                    System.out.println("q="+q);
-                    System.out.println(map);
                 }
                 break;
             case 3 :
@@ -71,13 +65,9 @@ class Solution {
                     }
                 }
                 answer = p*q;
-                System.out.println("p="+p);
-                System.out.println("q="+q);
-                System.out.println(map);
                 break;
             case 4 :
                 answer = num[0];
-                System.out.println(map);
                 break;
         }
         
