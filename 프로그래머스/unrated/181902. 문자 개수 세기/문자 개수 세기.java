@@ -5,11 +5,11 @@ class Solution {
         for(int i=0; i<my_string.length(); i++) {
             char chr = my_string.charAt(i);
             
-            if('A' <= chr && chr <= 'Z') {
-                answer[chr-'A'] ++;
+            if('a' <= chr) {
+                answer[chr-'a'+26] ++;
             }
             else {
-                answer[chr-'A'-6] ++;
+                answer[chr-'A'] ++;
             }
         }
         
