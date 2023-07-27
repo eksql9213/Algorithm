@@ -4,8 +4,9 @@ class Solution {
         int even_sum = 0;
         
         for(int i=0; i<num_list.length; i++) {
-            if(i%2 != 0) odd_sum += num_list[i];
-            else even_sum += num_list[i];
+            int num = num_list[i];
+            if(i%2 != 0) odd_sum += num;
+            else even_sum += num;
         }
         
         
