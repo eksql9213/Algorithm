@@ -18,8 +18,8 @@ class Solution {
                 answer += nickname.charAt(i);
             }
         }
-        if(answer.length() < 3){
-            for(int i=0; i<4-answer.length(); i++) {answer += "o";}answer += "o";
+        for(int i=answer.length(); i<4; i++){
+            answer += "o";
         }
         if(answer.length() > 8){
             answer = answer.substring(0, 8);
